@@ -1,0 +1,16 @@
+﻿@model LogInOutNoteEdite.Models.UsersBase
+
+
+@{
+    Layout = "~/Views/Master/_LayerHead.cshtml";
+}
+    <div class="MainBlock">
+        @using (Html.BeginForm())
+        {
+            @Html.TextBoxFor(x=>x.CurName);
+            @Html.PasswordFor(x=>x.CurPassword);
+
+            <input type="submit" value="Login" />
+        }
+    </div>
+
