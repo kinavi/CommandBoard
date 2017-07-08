@@ -10,10 +10,14 @@ namespace LogInOutNoteEdite.Models
 {
     public class FileControl
     {
-        private static string Name = @"C:\Users\wolfm\OneDrive\Документы\Visual Studio 2017\Projects\LogInOutNoteEdite\LogInOutNoteEdite\App_Data/ListProjects.xml";
+
+        private static string Name = @"C:\C#\ASP\CommandBoard\LogInOutNoteEdite\App_Data/ListProjects.xml";
+        //Uri.
+        //Path Name
 
         public static void LoadFile(ref List<Project> listProjects)
         {
+            //string path = "App_Data/ListProjects.xml";
             XDocument document = XDocument.Load(Name);
             XElement rootElement = document.Root;
 
