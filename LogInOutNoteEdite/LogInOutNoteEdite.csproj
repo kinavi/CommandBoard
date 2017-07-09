@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Projects.xml" />
+    <Content Include="Content\Style.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -112,7 +113,7 @@
     <Content Include="Views\Main\IsValid.cshtml" />
     <Content Include="Views\Main\Projects.cshtml" />
     <Content Include="Views\Main\View.cshtml" />
-    <Content Include="Views\Master\_LayerHead.cshtml" />
+    <Content Include="Views\Master\_LayoutMain.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,7 +121,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_LocalResources\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

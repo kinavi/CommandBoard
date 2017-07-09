@@ -11,7 +11,7 @@ namespace LogInOutNoteEdite.Models
     public class FileControl
     {
 
-        private static string Name = @"C:\C#\ASP\CommandBoard\LogInOutNoteEdite\App_Data/ListProjects.xml";
+        private static string Name = @"C:\C#\ASP\CommandBoard\LogInOutNoteEdite\App_LocalResources/ListProjects.xml";
         //Uri.
         //Path Name
 

@@ -15,6 +15,7 @@ namespace LogInOutNoteEdite.Controllers
         // GET: Main
         public ActionResult Index()
         {
+            ViewBag.Title = "Main";
             return View();
         }
 
@@ -24,9 +25,11 @@ namespace LogInOutNoteEdite.Controllers
 
             if (uBase.CheckForm())
             {
+                ViewBag.Title = "Projects";
                 ViewBag.List = divProjects.listProjects;
                 return View("Projects");
             }
+            ViewBag.Title = "Main";
             return View("Index");
         }
 

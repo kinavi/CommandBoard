@@ -1,0 +1,23 @@
+﻿body {
+
+}
+.MainBlock {
+    BACKGROUND: rgb(224, 224, 198);
+    position: relative;
+    display: table-caption;
+    padding: 20px 20px 0 20px;
+}
+.ProjectsItem > p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+span{
+
+}
