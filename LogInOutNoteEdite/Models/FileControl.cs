@@ -11,14 +11,12 @@ namespace LogInOutNoteEdite.Models
     public class FileControl
     {
 
-        private static string Name = @"C:\C#\ASP\CommandBoard\LogInOutNoteEdite\App_LocalResources/ListProjects.xml";
-        //Uri.
-        //Path Name
+        static String FilePath = HttpContext.Current.Server.MapPath("/App_Data/ListProjects.xml");
 
         public static void LoadFile(ref List<Project> listProjects)
         {
             //string path = "App_Data/ListProjects.xml";
-            XDocument document = XDocument.Load(Name);
+            XDocument document = XDocument.Load(FilePath);
             XElement rootElement = document.Root;
 
             var listPr = from e in rootElement.Elements() select e;

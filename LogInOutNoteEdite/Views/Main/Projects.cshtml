@@ -2,15 +2,15 @@
 @{
     Layout = "~/Views/Master/_LayoutMain.cshtml";
 }
-
+<div class="ListItems">
 @foreach (LogInOutNoteEdite.Models.Project pr in ViewBag.List)
 {
-    <div class="ProjectsItem">
+    <div class="ProjectItem">
         <p>ID: @pr.Id</p>
         <p>Name: @pr.Name</p>
         <p>Discription: @pr.Discription</p>
         <p>Rank: @pr.Rank</p>
     </div>
-    
 }
+</div>
 
